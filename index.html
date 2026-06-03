@@ -4,19 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — BillCrunch</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='61.3 468.6 1024 1024'%3E%3Cpath fill='%231F4E79' d='M870.2 1366c1.5-110.8.1-592.3 0-597.1v-.2c-4.1-56.1-37.9-112.6-92.9-155-56.9-43.9-129.2-68-203.4-68s-141.2 24.4-198.4 66.9c-59.9 44.5-95.3 102.1-99.7 162.2v628.4c-.2 4.3 1.3 7.9 4.3 10.2 2 1.6 4.6 2.3 7.3 2.3s3.3-.3 5-.8l128.9-58.8 4.7 1.4 68.5 41.5 9.3-1.1 67-41.6c1.4-.7 2.9-.7 4.3 0l66 40.3c6.6 4.2 11.2 2.1 16.1-.2 10.8-5 21.8-12.7 32.5-20.1 9.5-6.6 19.3-13.5 28.6-18.2 5.5-2.8 5.9-2.6 10.5-.6 1 .4 2.1.9 3.4 1.4 21.2 8.6 42.7 19 63.5 29.1 18.9 9.2 38.3 18.6 57.7 26.7 3.2 1.2 10.8 1.7 14.2-1.7 2.3-2.3 3.1-8.6 2.5-39.3 0-3.5-.1-6.3 0-7.7Z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --paper: #faf8f3;
-    --ink: #1c2b29;
-    --ink-soft: #45524f;
-    --accent: #0f6b5c;
-    --accent-soft: #e4efe9;
-    --rule: #e3ddd1;
-    --placeholder-bg: #fff3bf;
-    --placeholder-border: #e6c200;
+    --paper: #FAF8F5;       /* Warm White  */
+    --ink: #1C1C1C;         /* Ink Black   */
+    --ink-soft: #5e5e5e;
+    --navy: #1F4E79;        /* Navy Blue   */
+    --navy-soft: #e8eef5;
+    --gold: #F5A623;        /* Monster Gold */
+    --gold-soft: #fdecc8;
+    --gold-border: #e0930f;
+    --rule: #e8e3da;
     --max: 760px;
   }
 
@@ -33,6 +35,12 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  .topbar {
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--navy) 0 78%, var(--gold) 78% 100%);
+  }
+
   .wrap {
     max-width: var(--max);
     margin: 0 auto;
@@ -42,7 +50,21 @@
   header {
     border-bottom: 1px solid var(--rule);
     margin-bottom: 48px;
-    padding: 56px 0 36px;
+    padding: 44px 0 36px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  .brand .logo { height: 52px; width: auto; display: block; }
+  .brand .wordmark {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--ink);
   }
 
   .badge {
@@ -52,9 +74,9 @@
     font-size: 13px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--navy);
     font-weight: 600;
-    background: var(--accent-soft);
+    background: var(--navy-soft);
     padding: 6px 12px;
     border-radius: 999px;
     margin-bottom: 22px;
@@ -62,12 +84,12 @@
   .badge svg { display: block; }
 
   h1 {
-    font-family: "IBM Plex Sans", system-ui, sans-serif;
     font-weight: 700;
     font-size: clamp(2rem, 6vw, 2.8rem);
     line-height: 1.12;
     margin: 0 0 14px;
     letter-spacing: -0.02em;
+    color: var(--ink);
   }
 
   .updated {
@@ -85,13 +107,13 @@
   .lead {
     font-size: 18px;
     color: var(--ink);
-    background: var(--accent-soft);
-    border-left: 3px solid var(--accent);
+    background: var(--navy-soft);
+    border-left: 4px solid var(--navy);
     padding: 18px 22px;
     border-radius: 4px;
     margin: 28px 0 0;
   }
-  .lead strong { font-weight: 600; }
+  .lead strong { font-weight: 700; color: var(--navy); }
 
   .disagree {
     margin-top: 18px;
@@ -101,15 +123,15 @@
   }
 
   h2 {
-    font-family: "IBM Plex Sans", system-ui, sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
     margin: 52px 0 14px;
     letter-spacing: -0.01em;
+    color: var(--ink);
   }
   h2 .num {
-    color: var(--accent);
-    font-size: 0.85em;
+    color: var(--gold);
+    font-size: 0.9em;
     margin-right: 10px;
     font-variant-numeric: tabular-nums;
     font-weight: 700;
@@ -117,18 +139,19 @@
 
   p { margin: 0 0 16px; }
   strong { font-weight: 600; }
-  a { color: var(--accent); }
+  a { color: var(--navy); }
 
   ul { margin: 0 0 16px; padding-left: 22px; }
   li { margin-bottom: 8px; }
+  li::marker { color: var(--navy); }
 
   .ph {
-    background: var(--placeholder-bg);
-    border-bottom: 2px solid var(--placeholder-border);
+    background: var(--gold-soft);
+    border-bottom: 2px solid var(--gold-border);
     padding: 1px 5px;
     border-radius: 3px;
     font-weight: 500;
-    color: #5a4a00;
+    color: #6b4905;
   }
 
   .contact {
@@ -155,14 +178,24 @@
 
   @media (max-width: 520px) {
     body { font-size: 16px; }
-    header { padding: 40px 0 28px; }
+    header { padding: 32px 0 28px; }
+    .brand .logo { height: 44px; }
   }
 </style>
 </head>
 <body>
+<div class="topbar"></div>
 <div class="wrap">
 
   <header>
+    <div class="brand">
+      <svg class="logo" viewBox="61.3 468.6 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BillCrunch logo">
+        <path fill="#1F4E79" d="M870.2,1366c1.5-110.8.1-592.3,0-597.1v-.2c-4.1-56.1-37.9-112.6-92.9-155-56.9-43.9-129.2-68-203.4-68s-141.2,24.4-198.4,66.9c-59.9,44.5-95.3,102.1-99.7,162.2h0c0,.1,0,628.4,0,628.4-.2,4.3,1.3,7.9,4.3,10.2,2,1.6,4.6,2.3,7.3,2.3s3.3-.3,5-.8h.2c0,0,128.9-58.8,128.9-58.8l4.7,1.4,68.5,41.5,9.3-1.1,67-41.6c1.4-.7,2.9-.7,4.3,0l66,40.3c6.6,4.2,11.2,2.1,16.1-.2,10.8-5,21.8-12.7,32.5-20.1,9.5-6.6,19.3-13.5,28.6-18.2,5.5-2.8,5.9-2.6,10.5-.6,1,.4,2.1.9,3.4,1.4,21.2,8.6,42.7,19,63.5,29.1,18.9,9.2,38.3,18.6,57.7,26.7h.1c3.2,1.2,10.8,1.7,14.2-1.7,2.3-2.3,3.1-8.6,2.5-39.3,0-3.5-.1-6.3,0-7.7M661.8,712.6c5.7-12.7,16.9-20.5,31.6-21.9,1.8-.2,3.5-.2,5.1-.2,24.2,0,37,17.5,39,35.8,2.1,19.3-8.3,40.4-32.1,43.2-16.9,2-30.9-3.2-39.4-14.6-8.6-11.7-10.3-28.6-4.2-42.3M463.9,767.3c-16.3,6.2-31.1,4-41.7-6.4-11.7-11.4-16.2-31-10.7-46.5,4.9-13.8,16.5-22.2,32.8-23.7,24.5-2.3,39.4,14,43.4,31,3.9,16.6-2,37.2-23.9,45.6M437.3,830.2c.8-.4,1.5-.8,2.3-1.2,9.7-4.9,19.3-11,28.6-17,9.3-6,19-12.2,28.4-16.9.7-.3,1.4-.7,2.1-1.1,3.6-1.9,5.1-2.6,7.1-1.4,9.4,5.2,18.8,11.5,27.9,17.5,9.6,6.4,19.6,13,29.6,18.4.6.3,1.2.6,1.7.9,6.6,3.7,8.6,4.1,16.5.4,9.5-4.4,19.3-11.4,28.8-18.1,9.8-6.9,19.9-14.1,29.3-18.2.5-.2.9-.4,1.3-.6,1.3-.6,2-.9,2.7-.9l68.6,40.6.3.2c6.9,3.1,13.9-.2,19.6-2.9.8-.4,1.7-.8,2.5-1.2,13.9-6.2,27.5-13.6,40.7-20.7,8.7-4.7,17.7-9.5,26.6-14,1-.5,1.8-.6,2.5-.5l.4,526.5c-.8.2-2,.2-4.2-.4-8.4-2.3-22.2-9.8-34.3-16.4-7.6-4.1-14.8-8-20.5-10.6-.8-.3-1.7-.8-2.8-1.3-10.1-4.7-19.6-8.9-24.3-8.5h-.7c0,0-.6.4-.6.4-14.6,7.5-28.8,16.4-42.6,25.1-7.8,4.9-15.8,9.9-23.8,14.6l-3.1.6-74.9-42-74.4,41.8c-16.6-7.7-32.5-17.8-47.8-27.5-5.9-3.7-12-7.6-18-11.3l-.5-.3c-7.5-3-15.4,1-21.9,4.2-1.4.7-2.8,1.4-4,1.9-12.1,5.4-24.1,11.4-35.7,17.2-8.8,4.4-17.9,8.9-27,13.2l-1-.3v-526.5c16.1,7.2,32.2,15.5,47.8,23.6,9.9,5.1,20.1,10.4,30.1,15.3,6.5,3.2,12.2.1,16.8-2.4"/>
+        <path fill="#1F4E79" d="M473.8,1152.8c1.1.6,2.3,1.2,3.5,2,20.4,11.9,44.1,18.1,66.8,23.3.3,4.2,0,14.7-.2,22.7-.3,10.7-.6,20.7,0,24.5.7,5.5,2.8,7.6,8.4,8.4,3.7.5,10.4.7,17.3.7s15.5-.3,19.5-.7c2.4-.3,8.7-1,9.6-7.1l.5-47.3c48.5-9.2,74.9-29.8,80.7-62.8,11-63.1-45.4-81.8-90.6-96.8-7.3-2.4-14.1-4.7-20.6-7.1l-1.3-.5c-9.2-3.4-37.2-13.7-40.1-23.3-1.5-5-1.1-9.5,1.1-13.4,3.2-5.7,10.4-10.4,19.9-12.9,37-9.8,75.5,9,101.2,24l.3.2h.4c2.5.9,4.6.2,6-.2,5.1-1.5,8.7-8.8,14.2-20.6,2.5-5.5,5.2-11.2,7.1-13.3l.5-.5.2-.7c1.3-3.5,1.2-6.7-.4-9.1,0,0-1.6-2.3-18.7-11.4-17.5-9.3-37.9-16.3-60.4-20.7v-45.6c0-2-3.2-5.2-5.2-5.2h-43.1c-5.2,0-6.5,8.2-6.5,8.3-.5,3.5-.2,12.5,0,22,.2,7,.5,16.1.3,20.2-28.4,4.2-52.8,18.5-65.8,38.6-10.6,16.5-12.9,36-6.5,56.3,11.3,36.1,49.7,47.9,86.9,59.2,21.7,6.6,42.2,12.9,55.7,23.6,6.5,5.1,9.3,11.2,8.4,17.6-1.1,7.6-7.6,14.6-17,18.2-35.3,13.7-80.7-4-98.6-12.3-1.5-.7-3.4-1.9-5.5-3.1-7.3-4.5-18.2-11.3-24.2-2.3-2.8,4.3-10.6,22.1-12.3,27.3-4,12.3.7,15.5,8.5,19.8"/>
+      </svg>
+      <span class="wordmark">BillCrunch</span>
+    </div>
+
     <span class="badge">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -262,7 +295,7 @@
 
   <section>
     <h2><span class="num">11</span>Children&rsquo;s privacy</h2>
-    <p>BillCrunch is a general-purpose budgeting and bill-reminder tool and is not directed at children. Because the app collects no data and transmits nothing to us, we do not knowingly collect personal information from anyone, including children under the age of children under the age of 13, or the higher minimum age that may apply in their country.</p>
+    <p>BillCrunch is a general-purpose budgeting and bill-reminder tool and is not directed at children. Because the app collects no data and transmits nothing to us, we do not knowingly collect personal information from anyone, including children under the age of <span class="ph">[[AGE, e.g. 13 / 16 depending on jurisdiction]]</span>.</p>
   </section>
 
   <section>
