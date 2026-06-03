@@ -6,7 +6,7 @@
 <title>Privacy Policy — BillCrunch</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --paper: #faf8f3;
@@ -21,7 +21,6 @@
   }
 
   * { box-sizing: border-box; }
-
   html { -webkit-text-size-adjust: 100%; }
 
   body {
@@ -40,7 +39,6 @@
     padding: 0 24px 96px;
   }
 
-  /* Header */
   header {
     border-bottom: 1px solid var(--rule);
     margin-bottom: 48px;
@@ -61,16 +59,15 @@
     border-radius: 999px;
     margin-bottom: 22px;
   }
-
   .badge svg { display: block; }
 
   h1 {
-    font-family: "Fraunces", Georgia, serif;
-    font-weight: 500;
-    font-size: clamp(2.1rem, 6vw, 3rem);
-    line-height: 1.1;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    line-height: 1.12;
     margin: 0 0 14px;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
 
   .updated {
@@ -83,11 +80,10 @@
     margin-top: 28px;
     color: var(--ink-soft);
   }
-
   .intro strong { color: var(--ink); font-weight: 600; }
 
   .lead {
-    font-size: 19px;
+    font-size: 18px;
     color: var(--ink);
     background: var(--accent-soft);
     border-left: 3px solid var(--accent);
@@ -95,42 +91,37 @@
     border-radius: 4px;
     margin: 28px 0 0;
   }
+  .lead strong { font-weight: 600; }
 
-  /* Headings */
-  h2 {
-    font-family: "Fraunces", Georgia, serif;
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin: 52px 0 14px;
-    padding-top: 8px;
-    letter-spacing: -0.01em;
+  .disagree {
+    margin-top: 18px;
+    font-size: 15px;
+    color: var(--ink-soft);
+    font-style: italic;
   }
 
+  h2 {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 52px 0 14px;
+    letter-spacing: -0.01em;
+  }
   h2 .num {
     color: var(--accent);
     font-size: 0.85em;
     margin-right: 10px;
     font-variant-numeric: tabular-nums;
-  }
-
-  h3 {
-    font-family: "Fraunces", Georgia, serif;
-    font-weight: 600;
-    font-size: 1.05rem;
-    margin: 30px 0 10px;
+    font-weight: 700;
   }
 
   p { margin: 0 0 16px; }
-
   strong { font-weight: 600; }
-
   a { color: var(--accent); }
 
-  /* Lists */
   ul { margin: 0 0 16px; padding-left: 22px; }
   li { margin-bottom: 8px; }
 
-  /* Placeholder highlighting */
   .ph {
     background: var(--placeholder-bg);
     border-bottom: 2px solid var(--placeholder-border);
@@ -140,7 +131,6 @@
     color: #5a4a00;
   }
 
-  /* Contact block */
   .contact {
     background: #fff;
     border: 1px solid var(--rule);
@@ -151,7 +141,6 @@
   .contact p { margin: 0 0 6px; }
   .contact p:last-child { margin-bottom: 0; }
 
-  /* Divider */
   hr {
     border: none;
     border-top: 1px solid var(--rule);
@@ -181,111 +170,124 @@
       Privacy by design
     </span>
     <h1>Privacy Policy for BillCrunch</h1>
-    <p class="updated"><strong>Last updated:</strong> <span class="ph">[EFFECTIVE DATE]</span></p>
+    <p class="updated"><strong>Last updated:</strong> 3 June 2026</p>
 
-    <p class="intro">This Privacy Policy explains how <strong>BillCrunch</strong> (&ldquo;the app&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) handles your information. BillCrunch is developed and published by <span class="ph">[DEVELOPER / COMPANY NAME]</span>.</p>
+    <p class="intro">This Privacy Policy explains how the <strong>BillCrunch</strong> mobile application (&ldquo;BillCrunch&rdquo;, &ldquo;the app&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) handles your information. It applies to the BillCrunch app distributed through the Google Play Store.</p>
 
-    <p class="lead">We have designed BillCrunch to be private by default. <strong>We do not collect, transmit, sell, or share any personal data.</strong> Everything you enter into the app stays on your device.</p>
+    <p class="lead"><strong>Short version:</strong> BillCrunch does not collect, transmit, sell, or share any personal data. Everything you enter stays on your device. We have no servers, no accounts, and no analytics. You can permanently delete all of your data from within the app at any time.</p>
+
+    <p class="disagree">If you do not agree with this policy, please do not use the app.</p>
   </header>
 
   <section>
-    <h2>Summary</h2>
+    <h2><span class="num">1</span>Who we are</h2>
+    <p>BillCrunch is published by John Doe (&ldquo;the Developer&rdquo;).</p>
+    <p>Contact email: <a href="mailto:snap.appdev@proton.me">snap.appdev@proton.me</a></p>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span>The data we collect</h2>
+    <p><strong>We do not collect any data from you.</strong></p>
+    <p>BillCrunch has no backend servers and no user accounts. We cannot see, access, or receive any information you enter into the app. There is no sign-up, no login, and no telemetry.</p>
+    <p>The information you create while using the app (for example, bill and payment names, amounts, currencies, due dates, frequencies, notes, categories, tags, and your in-app preferences) is stored only on your device, inside the app&rsquo;s private local database. It never leaves your device through BillCrunch, and we never receive a copy of it.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span>How your information is stored</h2>
+    <p>All of your information is stored locally on your device using the device&rsquo;s on-device database (SQLite), within the app&rsquo;s private, sandboxed storage area provided by the Android operating system.</p>
+    <p>We do not upload, back up, or synchronise your data to any cloud service or third party.</p>
+    <p>We do not transmit your data over the internet. The app does not require, and does not use, an internet connection to function.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span>Notifications</h2>
+    <p>BillCrunch can send you local reminders about upcoming bills and payments. These notifications:</p>
     <ul>
-      <li><strong>No data leaves your device.</strong> All information you create or enter is stored locally on your device only.</li>
-      <li><strong>No accounts, no sign-in.</strong> You do not need to register or provide any personal details to use BillCrunch.</li>
-      <li><strong>No tracking, no analytics, no advertising.</strong> We do not use third-party analytics, advertising, or tracking SDKs.</li>
-      <li><strong>You are in full control.</strong> You can delete all app data at any time, returning the app to its original, freshly-installed state.</li>
+      <li>Are generated and scheduled entirely on your device.</li>
+      <li>Are optional and can be turned on or off in the app&rsquo;s settings.</li>
+      <li>Require the Android notifications permission (POST_NOTIFICATIONS) on Android 13 and above. You may grant or deny this permission, and revoke it later in your device settings.</li>
+    </ul>
+    <p>No notification content is sent to us or to any third party.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span>Backups (export and import)</h2>
+    <p>BillCrunch lets you manually export your data to a backup file (JSON) and import it again later. This feature is fully under your control:</p>
+    <ul>
+      <li>Exports and imports are initiated by you, on your device.</li>
+      <li>We do not receive, store, or have access to your backup files.</li>
+      <li>If you choose to save, move, email, or share a backup file using another app or service (for example, a cloud storage app, your file manager, or your email client), that file is then handled by that service under its privacy policy, not ours. Please treat your backup files as you would any other personal or financial document.</li>
     </ul>
   </section>
 
   <section>
-    <h2><span class="num">1</span>Information We Collect</h2>
-    <p><strong>We do not collect any personal information.</strong></p>
-    <p>BillCrunch may let you enter information so the app can perform its function (for example, <span class="ph">[DESCRIBE THE KIND OF DATA THE USER ENTERS, e.g. &ldquo;bill amounts, item descriptions, and the number of people splitting a bill&rdquo;]</span>). This information:</p>
+    <h2><span class="num">6</span>Permissions we request</h2>
+    <p>BillCrunch requests only the permissions it needs to provide its core features:</p>
     <ul>
-      <li>is stored <strong>only locally</strong> on your device;</li>
-      <li>is <strong>never transmitted</strong> to us or to any third party;</li>
-      <li>is <strong>not accessible</strong> to us in any form.</li>
+      <li><strong>Notifications:</strong> to show local bill reminders (optional; see Section 4).</li>
+      <li><strong>File access</strong> (via the system file picker / share sheet): only when you choose to export or import a backup file. The app uses the operating system&rsquo;s standard file picker and share interfaces; it does not browse or scan your files on its own.</li>
     </ul>
-    <p>We have no servers that receive your data, and we have no ability to view, retrieve, or back up the content you create in the app.</p>
+    <p>BillCrunch does not request access to your contacts, camera, microphone, location, or call/SMS data, and it does not contain advertising or tracking software.</p>
   </section>
 
   <section>
-    <h2><span class="num">2</span>How Your Data Is Stored</h2>
-    <p>All data you enter is saved in the app&rsquo;s local storage on your device. It remains on the device until you delete it (see Section 5) or uninstall the app. Because data is stored locally, it is subject to the security and access controls of your own device (for example, your screen lock and device encryption).</p>
-    <p>We recommend keeping your device secured with a passcode or biometric lock.</p>
+    <h2><span class="num">7</span>Sharing your information</h2>
+    <p>We do not share your information with anyone, because we never have it. BillCrunch does not transmit data to us, to advertisers, to analytics providers, or to any other third party.</p>
+    <p>We may disclose information only if it were ever legally required of us, but in practice we hold no user data to disclose.</p>
   </section>
 
   <section>
-    <h2><span class="num">3</span>Information We Do NOT Collect</h2>
-    <p>To be explicit, BillCrunch does <strong>not</strong> collect, request, or process any of the following:</p>
+    <h2><span class="num">8</span>Your control over your data: access, correction, and deletion</h2>
+    <p>Because all of your data lives on your device, you are always in full control of it:</p>
     <ul>
-      <li>Name, email address, phone number, or contact details</li>
-      <li>Location data</li>
-      <li>Device identifiers or advertising IDs</li>
-      <li>Usage analytics or behavioural data</li>
-      <li>Crash logs containing personal data</li>
-      <li>Financial account credentials or payment information</li>
-      <li>Contacts, photos, or files outside the app&rsquo;s own data</li>
+      <li><strong>Access and correction:</strong> You can view and edit any of your information directly in the app at any time.</li>
+      <li><strong>Deletion of individual items:</strong> You can delete individual bills, payments, categories, tags, and history entries within the app.</li>
+      <li><strong>Delete everything (factory reset):</strong> The app includes a &ldquo;delete all data&rdquo; / reset option in Settings. Confirming this permanently and irreversibly erases all of the data you created and returns the app to the same state it was in when first installed. This cannot be undone.</li>
+      <li><strong>Uninstalling:</strong> Removing (uninstalling) BillCrunch from your device also deletes the app&rsquo;s local database and all data stored within it.</li>
     </ul>
+    <p>No request to us is needed to exercise any of these rights; they are built into the app.</p>
   </section>
 
   <section>
-    <h2><span class="num">4</span>Permissions</h2>
-    <p>BillCrunch requests only the device permissions strictly necessary for its features.</p>
-    <ul>
-      <li><span class="ph">[PERMISSION NAME, e.g. &ldquo;Storage&rdquo;]</span> &mdash; <span class="ph">[REASON, e.g. &ldquo;to save your data locally on the device&rdquo;]</span>.</li>
-      <li><span class="ph">[ADD ANY OTHER PERMISSIONS, OR DELETE THIS SECTION IF NONE]</span></li>
-    </ul>
-    <p>If BillCrunch requires <strong>no special permissions</strong>, replace this section with: <em>&ldquo;BillCrunch does not require any special device permissions.&rdquo;</em></p>
+    <h2><span class="num">9</span>Data retention</h2>
+    <p>We do not retain any of your data, because we never receive it. Your data is retained on your device for exactly as long as you choose to keep it, and is removed when you delete it in the app or uninstall the app.</p>
   </section>
 
   <section>
-    <h2><span class="num">5</span>Deleting Your Data</h2>
-    <p>You are always in control of your data. You can permanently delete all data created in BillCrunch by:</p>
-    <ul>
-      <li>Using the in-app <span class="ph">[Delete All Data / Reset / Clear Data]</span> option, which removes all stored information and restores the app to the same state as a fresh install; <strong>and/or</strong></li>
-      <li>Clearing the app&rsquo;s storage via your device settings (<strong>Settings &rarr; Apps &rarr; BillCrunch &rarr; Storage &rarr; Clear Data</strong>); <strong>and/or</strong></li>
-      <li>Uninstalling the app, which removes all locally stored data.</li>
-    </ul>
-    <p>Once deleted, this data cannot be recovered, including by us, as we never held a copy of it.</p>
+    <h2><span class="num">10</span>Security</h2>
+    <p>Your data is protected by the security and sandboxing mechanisms of your device&rsquo;s operating system, which restrict access to the app&rsquo;s private storage. Because no data is transmitted off your device by BillCrunch, there is no transmission to intercept.</p>
+    <p>For your own protection, we recommend securing your device with a screen lock (PIN, password, or biometric) and keeping your device&rsquo;s software up to date.</p>
+    <p>No method of electronic storage is ever completely secure, and we cannot guarantee absolute security of data held on your device.</p>
   </section>
 
   <section>
-    <h2><span class="num">6</span>Third-Party Services</h2>
-    <p>BillCrunch does <strong>not</strong> integrate any third-party analytics, advertising, tracking, or data-sharing services. No third party receives your data through your use of the app.</p>
-    <p><em>(If this changes in future &mdash; for example, optional crash reporting &mdash; this section will be updated to disclose the service, the data involved, and the provider&rsquo;s privacy policy.)</em></p>
+    <h2><span class="num">11</span>Children&rsquo;s privacy</h2>
+    <p>BillCrunch is a general-purpose budgeting and bill-reminder tool and is not directed at children. Because the app collects no data and transmits nothing to us, we do not knowingly collect personal information from anyone, including children under the age of <span class="ph">[[AGE, e.g. 13 / 16 depending on jurisdiction]]</span>.</p>
   </section>
 
   <section>
-    <h2><span class="num">7</span>Children&rsquo;s Privacy</h2>
-    <p>BillCrunch does not collect personal information from anyone, including children. The app is not directed at children under the age of <span class="ph">[13 / 16 — ADJUST FOR YOUR TARGET MARKETS]</span>, and we do not knowingly collect personal data from them. Because no data is collected or transmitted, no personal information about any user &mdash; child or adult &mdash; is ever in our possession.</p>
+    <h2><span class="num">12</span>Your privacy rights (GDPR / CCPA and similar laws)</h2>
+    <p>Privacy laws such as the EU/UK GDPR and the California Consumer Privacy Act (CCPA) give individuals rights over their personal information, including the rights to access, correct, delete, and port their data, and to object to certain processing.</p>
+    <p>Because BillCrunch does not collect, transmit, store (off-device), sell, or &ldquo;share&rdquo; your personal information, we do not process personal data as a controller or business in the sense those laws describe. In practice, you can exercise the equivalent of these rights yourself, at any time, using the in-app features described in Section 8 (view, edit, export, and delete your data). We do not sell or share personal information for advertising or any other purpose.</p>
   </section>
 
   <section>
-    <h2><span class="num">8</span>Data Security</h2>
-    <p>We take a privacy-by-design approach: the most effective protection for your data is that it never leaves your device and is never sent to us. The security of locally stored data depends on your device&rsquo;s own protections. We encourage you to keep your operating system up to date and to use device-level security such as a screen lock.</p>
+    <h2><span class="num">13</span>Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time, for example to reflect new app features or legal requirements. When we do, we will revise the &ldquo;Last updated&rdquo; date at the top of this page and publish the updated policy at the same location. Material changes will be made available before they take effect where required by law. We encourage you to review this policy periodically.</p>
   </section>
 
   <section>
-    <h2><span class="num">9</span>Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time, for example to reflect changes to the app or legal requirements. Any changes will be posted on this page with an updated &ldquo;Last updated&rdquo; date. Material changes will be communicated through the app or the Google Play listing where appropriate. Continued use of the app after changes take effect constitutes acceptance of the revised policy.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">10</span>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy or how BillCrunch handles your information, contact us at:</p>
+    <h2><span class="num">14</span>Contact us</h2>
+    <p>If you have any questions about this Privacy Policy or how BillCrunch handles information, please contact us at:</p>
     <div class="contact">
-      <p><strong><span class="ph">[DEVELOPER / COMPANY NAME]</span></strong></p>
-      <p>Email: <strong><span class="ph">[CONTACT EMAIL]</span></strong></p>
-      <p>Website: <span class="ph">[WEBSITE URL — optional]</span></p>
-      <p>Address: <span class="ph">[POSTAL ADDRESS — optional]</span></p>
+      <p>Email: <strong><a href="mailto:snap.appdev@proton.me">snap.appdev@proton.me</a></strong></p>
+      <p>Developer: <strong>John Doe</strong></p>
     </div>
   </section>
 
   <hr>
   <footer>
-    <p>&copy; BillCrunch. This page is the official privacy policy for the BillCrunch application.</p>
+    <p>This policy is governed by the laws of Australia, without regard to its conflict-of-law provisions.</p>
   </footer>
 
 </div>
